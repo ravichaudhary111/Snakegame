@@ -1,12 +1,10 @@
 ### Snake Game 
-It is one of my childhood game in keypad mobile.
-Snake eat the food when it head location match with food location and each time snake size incress.
+It is one of my childhood games on a keypad mobile.
 
-when snake head touch the broder or his body,game end.
+Snake eat the food when its head location match with the food location and each time snake size increases.
+when snakehead touches the border or his body, the game end.
 
-we can restart the game by touching any key.
-If Score is greter than the Hiscore than score value transfer in Hiscore.    
-
+we can restart the game by touching any key. If Score is greater than the Hiscore then score value transfer in Hiscore.
 
 
 ## Acknowledgements
