@@ -1,8 +1,8 @@
 // Game Constants & Variables
 let inputDir = { x: 0, y: 0 };
-const foodSound = new Audio('music/food.mp3');
-const gameOverSound = new Audio('music/gameover.mp3');
-const moveSound = new Audio('music/move.mp3');
+const foodSound = new Audio('food.mp3');
+const gameOverSound = new Audio('gameover.mp3');
+const moveSound = new Audio('move.mp3');
 let speed = 5;
 let score = 0;
 let lastPaintTime = 0;
@@ -69,7 +69,7 @@ function gameEngine() {
 
     // Moving the snake
     for (let i = snakeArr.length - 2; i >= 0; i--) {
-        snakeArr[i + 1] = {...snakeArr[i] };
+        snakeArr[i + 1] = { ...snakeArr[i] };
     }
 
     snakeArr[0].x += inputDir.x;
@@ -108,7 +108,7 @@ if (hiscore === null) {
     localStorage.setItem("hiscore", JSON.stringify(hiscoreval))
 } else {
     hiscoreval = JSON.parse(hiscore);
-    hiscoreBox.innerHTML = "HiScore: " + hiscore;
+    hiscoreBox.innerHTML = "HighScore: " + hiscore;
 }
 
 window.requestAnimationFrame(main);
